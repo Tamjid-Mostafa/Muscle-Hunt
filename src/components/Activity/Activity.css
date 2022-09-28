@@ -1,0 +1,8 @@
+.header{
+    display: flex;
+    align-items: center;
+}
+.header img{
+    width: 10rem;
+    height: 10rem;
+}

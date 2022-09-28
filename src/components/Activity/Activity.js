@@ -1,4 +1,5 @@
 import logo from "../../logo.png";
+import './Activity.css';
 import React, { useEffect, useState } from "react";
 import Gym from "../Gym/Gym";
 
@@ -11,14 +12,17 @@ const Activity = () => {
       .then((data) => setWorkouts(data));
   }, []);
   return (
-    <div className="header">
+    <div className="activity">
+        <div className="header">
+            
       <img src={logo} alt="" />
       <h3>Muscle Hunt</h3>
+        </div>
         {
             workouts.map(workout => <Gym
             key = {workout.id}
             workout = {workout}
-            
+
 
             ></Gym>)
         }

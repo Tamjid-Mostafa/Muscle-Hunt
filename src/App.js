@@ -1,13 +1,12 @@
-import logo from './logo.png';
 import './App.css';
 import Activity from './components/Activity/Activity';
 
 function App() {
 
   return (
-    <div >
-      
+    <div className='app'>
       <Activity></Activity>
+
     </div>
   );
 }

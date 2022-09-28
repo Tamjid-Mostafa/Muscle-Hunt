@@ -1,16 +1,13 @@
 import React from 'react';
-
-import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import { Card, Button, CardGroup } from "react-bootstrap";
+import './Gym.css';
 
 const Gym = (props) => {
     console.log(props.workout);
 
-    const {name, age, picture, time} = props.workout;
+    const {name, picture, age, time} = props.workout;
     return (
-        <div className='container'>
-
-      
+        <div>
+            <img src={picture} alt=''/>
         </div>
     );
 };
