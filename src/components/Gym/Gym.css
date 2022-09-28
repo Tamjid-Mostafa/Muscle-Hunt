@@ -1,0 +1,26 @@
+.card{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 5%;
+    position: relative;
+    
+}
+.card img{
+    width: 90%;
+    border-radius: 10px;
+    margin: 5%;
+}
+.btn{
+    color: #fff;
+    padding: 5% 20%;
+    background-color: #47B5FF;
+    border: none;
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 10%;
+    font-size: large;
+    font-weight: 600;
+}
+.btn:hover{
+    background-color: #256D85;
+}

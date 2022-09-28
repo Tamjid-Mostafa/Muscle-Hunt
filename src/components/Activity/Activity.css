@@ -1,8 +1,28 @@
+
+.activity{
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+
 .header{
     display: flex;
     align-items: center;
+    font-size: 3rem;
 }
 .header img{
     width: 10rem;
     height: 10rem;
 }
+
+
+@media screen and (max-width: 480px) {
+    .cards {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
