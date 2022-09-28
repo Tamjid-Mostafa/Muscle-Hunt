@@ -24,7 +24,7 @@ const Activity = () => {
 
   return (
     <div className="activity">
-      <div>
+      <div className="workout-list">
         <div className="header">
           <img src={logo} alt="" />
           <h3>Muscle Hunt</h3>

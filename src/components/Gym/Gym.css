@@ -3,6 +3,7 @@
     border-radius: 10px;
     padding: 5%;
     position: relative;
+    box-shadow: 5px 10px 100px #47b5ff5e;
     
 }
 .card img{

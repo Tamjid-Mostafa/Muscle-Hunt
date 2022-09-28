@@ -1,12 +1,15 @@
 
 .activity{
     display: grid;
-    grid-template-columns: 4fr 2fr;
+    grid-template-columns: 10fr 2fr;
+}
+.workout-list{
+    margin: 0 10%;
 }
 .cards{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
+    grid-gap: 5%;
 }
 
 
