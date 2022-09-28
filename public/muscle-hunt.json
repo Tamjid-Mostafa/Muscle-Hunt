@@ -1,0 +1,44 @@
+[
+    {
+      "id": "63347d4fd34301dc8cade700",
+      "picture": "./images/skipping.jpg",
+      "age": 23,
+      "time": 42,
+      "name": "Skipping"
+    },
+    {
+      "id": "63347d4fd676e9d62b662430",
+      "picture": "./images/chin-up.jpg",
+      "age": 24,
+      "time": 46,
+      "name": "Chin Up"
+    },
+    {
+      "id": "63347d4f2e018c9e64ca21dd",
+      "picture": "./images/bench-press.jpg",
+      "age": 25,
+      "time": 49,
+      "name": "Bench Press"
+    },
+    {
+      "id": "63347d4f2a6f85807f136a97",
+      "picture": "./images/dumbbell-press.jpg",
+      "age": 20,
+      "time": 49,
+      "name": "Dumbell Press"
+    },
+    {
+      "id": "63347d4f31f063744e3d9ffb",
+      "picture": "./images/dumbell-fly.png",
+      "age": 37,
+      "time": 48,
+      "name": "Dumble Fly"
+    },
+    {
+      "id": "63347d4fc0707e6c55e2408c",
+      "picture": "./images/jumping-jacks.jpg",
+      "age": 27,
+      "time": 41,
+      "name": "Jumping Jacks"
+    }
+  ]
