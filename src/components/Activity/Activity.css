@@ -2,6 +2,7 @@
 .activity{
     display: grid;
     grid-template-columns: 10fr 2fr;
+    font-size: 2rem;
 }
 .workout-list{
     margin: 0 10%;
@@ -16,7 +17,8 @@
 .header{
     display: flex;
     align-items: center;
-    font-size: 3rem;
+    font-size: 1em;
+
 }
 .header img{
     width: 10rem;
@@ -24,8 +26,14 @@
 }
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1120px) {
+    .activity{
+        grid-template-columns: repeat(1, 1fr);
+    }
     .cards {
       grid-template-columns: repeat(1, 1fr);
+      grid-gap: 10px;
+      margin-bottom: 20px;
     }
+    
   }
