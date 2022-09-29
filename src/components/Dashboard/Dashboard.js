@@ -23,7 +23,7 @@ const Dashboard = (props) => {
     }
   }, [get]);
 
-  const toastLoad = () => toast("Okay");
+  const toastLoad = () => toast("Workout Completed");
 
   let total = 0;
   for (const workout of dashboard) {
