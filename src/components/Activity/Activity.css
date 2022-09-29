@@ -3,6 +3,7 @@
     display: grid;
     grid-template-columns: 10fr 2fr;
     font-size: 2rem;
+    margin-bottom: 10rem;
 }
 .workout-list{
     margin: 0 10%;

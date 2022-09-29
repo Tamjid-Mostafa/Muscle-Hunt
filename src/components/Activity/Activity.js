@@ -16,7 +16,7 @@ const Activity = () => {
   }, []);
 
   const handleAddTime = (workout) => {
-      console.log(workout);
+      // console.log(workout);
       const newTimer = [...dashboard, workout];
       setDashboard(newTimer);
 
@@ -41,7 +41,11 @@ const Activity = () => {
         </div>
       </div>
       <div className="dashboard">
-        <Dashboard dashboard={dashboard}></Dashboard>
+        <Dashboard 
+        key = {workouts.id}
+        dashboard={dashboard}
+        
+        ></Dashboard>
       </div>
     </div>
   );

@@ -1,30 +1,74 @@
-import React, { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import React, { useEffect, useState } from "react";
+import Profile from "../Profile/Profile";
 import "./Dashboard.css";
 
 const Dashboard = (props) => {
   const { dashboard } = props;
   const [breakTime, setBreakTime] = useState([]);
 
+  const handleBreakeTime = (timer) => {
+    localStorage.setItem("Timer", timer);
+    setBreakTime(timer);
+  };
 
-  const handleBreakeTime = (e) => {
-      
-      const breakTime = e.target.innerText;
-      setBreakTime(breakTime);
-  }
+  const get = localStorage.getItem("Timer");
+
+  useEffect(() => {
+    if (get) {
+      setBreakTime(get);
+    }
+  }, [get]);
+
+  const toast = () => {
+    toast("Okay");
+  };
 
   let total = 0;
-  for(const workout of dashboard){
-      total = total + workout.time;
+  for (const workout of dashboard) {
+    total = total + workout.time;
   }
   return (
     <div className="dashboard">
+      <Profile></Profile>
       <h3>Add Break Time Here</h3>
       <div className="btn-time">
-        <button onClick={(e) => {handleBreakeTime(e)}}>10s</button>
-        <button onClick={(e) => {handleBreakeTime(e)}}>30s</button>
-        <button onClick={(e) => {handleBreakeTime(e)}}>40s</button>
-        <button onClick={(e) => {handleBreakeTime(e)}}>20s</button>
-        <button onClick={(e) => {handleBreakeTime(e)}}>50s</button>
+        <button
+          onClick={() => {
+            handleBreakeTime(10);
+          }}
+        >
+          10s
+        </button>
+        <button
+          onClick={() => {
+            handleBreakeTime(20);
+          }}
+        >
+          20s
+        </button>
+        <button
+          onClick={() => {
+            handleBreakeTime(30);
+          }}
+        >
+          30s
+        </button>
+        <button
+          onClick={() => {
+            handleBreakeTime(40);
+          }}
+        >
+          40s
+        </button>
+        <button
+          onClick={() => {
+            handleBreakeTime(50);
+          }}
+        >
+          50s
+        </button>
       </div>
       <div className="exercise-details">
         <h3>Workout Details</h3>
@@ -35,10 +79,25 @@ const Dashboard = (props) => {
           </p>
           <p>
             <span>Breake Time</span>
-            <span>{breakTime}</span>
+            <span>{get}</span>
           </p>
         </div>
-        <button className="btn-completed">Completed</button>
+        <div>
+          <button onClick={toast} className="btn-completed">
+            Completed
+          </button>
+          <ToastContainer
+            position="top-center"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+          />
+        </div>
       </div>
     </div>
   );
