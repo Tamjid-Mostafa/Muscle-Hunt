@@ -6,7 +6,9 @@ import "./Dashboard.css";
 
 const Dashboard = (props) => {
   const { dashboard } = props;
-  const [breakTime, setBreakTime] = useState([]);
+  const [timer, setBreakTime] = useState([]);
+
+  
 
   const handleBreakeTime = (timer) => {
     localStorage.setItem("Timer", timer);
@@ -34,35 +36,35 @@ const Dashboard = (props) => {
       <div className="btn-time">
         <button
           onClick={() => {
-            handleBreakeTime(10);
+            handleBreakeTime('10s');
           }}
         >
           10s
         </button>
         <button
           onClick={() => {
-            handleBreakeTime(20);
+            handleBreakeTime('20s');
           }}
         >
           20s
         </button>
         <button
           onClick={() => {
-            handleBreakeTime(30);
+            handleBreakeTime('30s');
           }}
         >
           30s
         </button>
         <button
           onClick={() => {
-            handleBreakeTime(40);
+            handleBreakeTime('40s');
           }}
         >
           40s
         </button>
         <button
           onClick={() => {
-            handleBreakeTime(50);
+            handleBreakeTime('50s');
           }}
         >
           50s
