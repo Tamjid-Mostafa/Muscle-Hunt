@@ -34,6 +34,7 @@
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 2rem;
 }
 .btn-completed{
     color: #fff;

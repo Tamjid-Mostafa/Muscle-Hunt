@@ -21,9 +21,7 @@ const Dashboard = (props) => {
     }
   }, [get]);
 
-  const toast = () => {
-    toast("Okay");
-  };
+  const toastLoad = () => toast("Okay");
 
   let total = 0;
   for (const workout of dashboard) {
@@ -83,7 +81,7 @@ const Dashboard = (props) => {
           </p>
         </div>
         <div>
-          <button onClick={toast} className="btn-completed">
+          <button onClick={toastLoad} className="btn-completed">
             Completed
           </button>
           <ToastContainer
